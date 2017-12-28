@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hero.zhaoq.androidkissreactnative.MainActivity">
+
+    <TextView
+        android:id="@+id/btn_1"
+        android:background="#dfd"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="直接引用Rn moudle"
+        />
+
+    <!--<TextView-->
+        <!--android:id="@+id/btn_2"-->
+        <!--android:background="#dfd"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="直接引用moudle"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/btn_1"-->
+        <!--/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/btn_3"-->
+        <!--android:background="#dfd"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:gravity="center"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/btn_2"-->
+        <!--android:text="直接引用moudle"-->
+        <!--/>-->
+
+</android.support.constraint.ConstraintLayout>
