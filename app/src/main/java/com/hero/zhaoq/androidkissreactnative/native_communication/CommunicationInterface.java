@@ -29,6 +29,10 @@ public class CommunicationInterface extends ReactContextBaseJavaModule{
         return "CommunicationInterface";
     }
 
+    /**
+     * Rn 需要调用的方法：
+     * @param message
+     */
     @ReactMethod
     public void HandleMessage(String message){
         Toast.makeText(reactContext,message,Toast.LENGTH_LONG).show();
