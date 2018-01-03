@@ -1,5 +1,15 @@
 apply plugin: 'com.android.application'
 
+project.ext.react = [
+        entryFile: "../index.js"
+]
+
+
+apply from: "../node_modules/react-native/react.gradle"
+
+def enableSeparateBuildPerCPUArchitecture = false
+def enableProguardInReleaseBuilds = false
+
 android {
     compileSdkVersion 25
     buildToolsVersion '26.0.2'
@@ -10,6 +20,11 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        //jni  报错    指定ndk
+        ndk {
+            abiFilters "armeabi-v7a", "x86"
+        }
     }
     buildTypes {
         release {
@@ -17,6 +32,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+//    packagingOptions {
+//        exclude "lib/arm64-v8a/librealm-jni.so"
+//    }
 }
 
 dependencies {

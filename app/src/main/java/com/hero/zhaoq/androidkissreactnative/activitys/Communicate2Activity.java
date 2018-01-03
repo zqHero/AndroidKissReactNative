@@ -8,11 +8,12 @@ import com.facebook.react.common.LifecycleState;
 import com.facebook.react.modules.core.DefaultHardwareBackBtnHandler;
 import com.facebook.react.shell.MainReactPackage;
 import com.hero.zhaoq.androidkissreactnative.BuildConfig;
+import com.hero.zhaoq.androidkissreactnative.native_communication.MReactPacakge;
 
 /**
- * 通讯  方式 1：直接引用   ReactNative、的  moudle 模块：
+ * 方法之间的 相互调用：
  */
-public class Communicate1Activity extends BaseActivity implements DefaultHardwareBackBtnHandler {
+public class Communicate2Activity extends BaseActivity implements DefaultHardwareBackBtnHandler {
 
     private ReactRootView mReactRootView;
     private ReactInstanceManager mReactInstanceManager;
@@ -28,14 +29,14 @@ public class Communicate1Activity extends BaseActivity implements DefaultHardwar
 //                .setJSMainModuleName("index")
                 .setJSMainModulePath("index")
                 .addPackage(new MainReactPackage())
+                .addPackage(new MReactPacakge())   //添加  本地 moudel
                 .setUseDeveloperSupport(BuildConfig.DEBUG)
                 .setInitialLifecycleState(LifecycleState.RESUMED)
                 .build();
 
         // 注意这里的MyReactNativeApp必须对应“index.android.js”中的
         // “AppRegistry.registerComponent()”的第一个参数
-        mReactRootView.startReactApplication(mReactInstanceManager, "MyReactNativeApp", null);
-
+        mReactRootView.startReactApplication(mReactInstanceManager, "Communication", null);
         setContentView(mReactRootView);
     }
 

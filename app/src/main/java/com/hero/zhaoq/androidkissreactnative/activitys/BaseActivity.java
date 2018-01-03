@@ -1,4 +1,4 @@
-package com.hero.zhaoq.androidkissreactnative;
+package com.hero.zhaoq.androidkissreactnative.activitys;
 
 import android.content.Intent;
 import android.net.Uri;

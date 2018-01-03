@@ -17,26 +17,26 @@
         android:text="直接引用Rn moudle"
         />
 
-    <!--<TextView-->
-        <!--android:id="@+id/btn_2"-->
-        <!--android:background="#dfd"-->
-        <!--android:layout_marginTop="10dp"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="45dp"-->
-        <!--android:gravity="center"-->
-        <!--android:text="直接引用moudle"-->
-        <!--app:layout_constraintTop_toBottomOf="@id/btn_1"-->
-        <!--/>-->
+    <TextView
+        android:id="@+id/btn_2"
+        android:background="#dfd"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="原生方法 和RN 方法之间互相调用"
+        app:layout_constraintTop_toBottomOf="@id/btn_1"
+        />
 
-    <!--<TextView-->
-        <!--android:id="@+id/btn_3"-->
-        <!--android:background="#dfd"-->
-        <!--android:layout_marginTop="10dp"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="45dp"-->
-        <!--android:gravity="center"-->
-        <!--app:layout_constraintTop_toBottomOf="@id/btn_2"-->
-        <!--android:text="直接引用moudle"-->
-        <!--/>-->
+    <TextView
+        android:id="@+id/btn_3"
+        android:background="#dfd"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/btn_2"
+        android:text="Android 调用 ReactNative 方法来通信"
+        />
 
 </android.support.constraint.ConstraintLayout>
